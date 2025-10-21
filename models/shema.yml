@@ -14,7 +14,7 @@ sources:
               - unique
               - not_null
       - name: product
-        identifier: raw_gz_product
+        identifier: raw_product
         description: purchase_price by products_id
         columns:
           - name: products_id

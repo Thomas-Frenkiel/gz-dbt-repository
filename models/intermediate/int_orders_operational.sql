@@ -7,4 +7,4 @@ FROM {{ ref('int_orders_margin') }}
 LEFT JOIN {{ ref('stg_ship') }}
 USING (orders_id)
 GROUP BY orders_id, date_date
-ORDER BY date_date DESC, orders_id 
+ORDER BY date_date DESC, orders_id

@@ -2,7 +2,8 @@ SELECT
 orders_id,
 date_date,
 ROUND(SUM (margin + shipping_fee - logCost - ship_cost)) AS operational_margin
-
+SUM(revenue) AS revenue,
+SUM(shipping_fee) AS shipping_fee
 FROM {{ ref('int_orders_margin') }}
 LEFT JOIN {{ ref('stg_ship') }}
 USING (orders_id)

@@ -6,7 +6,8 @@ SUM(revenue) AS revenue,
 SUM(shipping_fee) AS shipping_fee,
 SUM(purchase_cost) AS purchase_cost,
 SUM(logCost) AS log_cost,
-SUM(quantity) AS quantity
+SUM(quantity) AS quantity,
+SUM(ship_cost) AS ship_cost
 FROM {{ ref('int_orders_margin') }}
 INNER JOIN {{ ref('stg_ship') }}
 USING (orders_id)

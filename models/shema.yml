@@ -32,4 +32,103 @@ sources:
               - unique
               - not_null
 
+              
 
+#BING AD 1
+      - name: gz_bing # allias de la table
+        identifier: raw_gz_bing #Nom exact de la table dans BQ
+        description: bing  date_date _ campaign_key
+        columns:
+          - name: date_date
+            description: no need
+          - name: paid_source
+            description: no need
+          - name: campaign_key
+            description: no need
+          - name:  camPGN_name
+            description: no need
+          - name: ads_cost
+            description: no need
+          - name: impression
+            description: no need
+          - name: click
+            description: no need
+          - name: "(date_date || '-' || campaign_key || '-' || camPGN_name)"
+            description: primary key of the table
+            tests:
+              - unique
+              - not_null
+      
+#FACEBOOK 2
+      - name: gz_facebook # allias de la table
+        identifier: raw_gz_facebook #Nom exact de la table dans BQ
+        description: facebook  date_date _ campaign_key
+        columns:
+          - name: date_date
+            description: no need
+          - name: paid_source
+            description: no need
+          - name: campaign_key
+            description: no need
+          - name:  camPGN_name
+            description: no need
+          - name: ads_cost
+            description: no need
+          - name: impression
+            description: no need
+          - name: click
+            description: no need
+          - name: "(date_date || '-' || campaign_key ||  '-' || camPGN_name)"
+            description: primary key of the table
+            tests:
+              - unique
+              - not_null
+#CRITEO 3
+      - name: gz_criteo # allias de la table
+        identifier: raw_gz_criteo #Nom exact de la table dans BQ
+        description: criteo  date_date _ campaign_key
+        columns:
+          - name: date_date
+            description: no need
+          - name: paid_source
+            description: no need
+          - name: campaign_key
+            description: no need
+          - name:  camPGN_name
+            description: no need
+          - name: ads_cost
+            description: no need
+          - name: impression
+            description: no need
+          - name: click
+            description: no need
+          - name: "(date_date || '-' || campaign_key || '-' || camPGN_name)"
+            description: primary key of the table
+            tests:
+              - unique
+              - not_null
+
+#ADWORDS 4
+      - name: gz_adwords # allias de la table
+        identifier: raw_gz_adwords #Nom exact de la table dans BQ
+        description: adwords  date_date _ campaign_key
+        columns:
+          - name: date_date
+            description: no need
+          - name: paid_source
+            description: no need
+          - name: campaign_key
+            description: no need
+          - name:  camPGN_name
+            description: no need
+          - name: ads_cost
+            description: no need
+          - name: impression
+            description: no need
+          - name: click
+            description: no need
+          - name: "(date_date || '-' || campaign_key || '-' || camPGN_name)"
+            description: primary key of the table
+            tests:
+              - unique
+              - not_null

@@ -1,7 +1,7 @@
 SELECT 
 
 date_date,
---  AS ads_margin,
+SUM(operational_margin - ads_cost) AS ads_margin,
 SUM(average_basket) AS average_basket,
 SUM(operational_margin) AS operational_margin,
 SUM(ads_cost) AS ads_cost,

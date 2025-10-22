@@ -11,7 +11,7 @@ impression,
 click,
 
  
-from {{ source('raw', 'raw_gz_bing') }}
+from {{ source('raw', 'gz_bing') }}
 
 
 

@@ -9,4 +9,4 @@ impression,
 click,
 
 
-from {{ source('raw', 'raw_gz_criteo') }}
+from {{ source('raw', 'gz_criteo') }}

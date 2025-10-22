@@ -46,4 +46,4 @@ models:
     mart:
       +materialized: table
       finance:
-        +shema: finance
+        +schema: finance

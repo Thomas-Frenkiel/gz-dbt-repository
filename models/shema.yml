@@ -35,7 +35,7 @@ sources:
               
 
 #BING AD
-      - name: raw_gz_bing # allias de la table
+      - name: gz_bing # allias de la table
         identifier: raw_gz_bing #Nom exact de la table dans BQ
         description: bing  date_date _ campaign_key
         columns:
@@ -60,7 +60,7 @@ sources:
           #     - not_null
       
 #FACEBOOK 
-      - name: raw_gz_facebook # allias de la table
+      - name: gz_facebook # allias de la table
         identifier: raw_gz_facebook #Nom exact de la table dans BQ
         description: facebook  date_date _ campaign_key
         columns:
@@ -84,7 +84,7 @@ sources:
           #     - unique
 
 #CRITEO
-      - name: raw_gz_criteo # allias de la table
+      - name: gz_criteo # allias de la table
         identifier: raw_gz_criteo #Nom exact de la table dans BQ
         description: criteo  date_date _ campaign_key
         columns:
@@ -109,7 +109,7 @@ sources:
           #     - not_null
 
 #ADWORDS
-      - name: raw_gz_adwords # allias de la table
+      - name: gz_adwords # allias de la table
         identifier: raw_gz_adwords #Nom exact de la table dans BQ
         description: adwords  date_date _ campaign_key
         columns:

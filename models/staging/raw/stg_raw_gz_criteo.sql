@@ -1,5 +1,5 @@
-
 select 
+
 date_date,
 paid_source,
 campaign_key,
@@ -8,4 +8,5 @@ CAST( ads_cost as FLOAT64) AS ads_cost,
 impression,
 click,
 
-from {{ source('raw', 'raw_gz_facebook') }}
+
+from {{ source('raw', 'raw_gz_criteo') }}

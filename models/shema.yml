@@ -34,7 +34,7 @@ sources:
 
               
 
-#BING AD
+#BING AD 1
       - name: gz_bing # allias de la table
         identifier: raw_gz_bing #Nom exact de la table dans BQ
         description: bing  date_date _ campaign_key
@@ -53,13 +53,13 @@ sources:
             description: no need
           - name: click
             description: no need
-          # - name: "(date_date || '-' || campaign_key)"
-          #   description: primary key of the table
-          #   tests:
-          #     - unique
-          #     - not_null
+          - name: "(date_date || '-' || campaign_key || '-' || camPGN_name)"
+            description: primary key of the table
+            tests:
+              - unique
+              - not_null
       
-#FACEBOOK 
+#FACEBOOK 2
       - name: gz_facebook # allias de la table
         identifier: raw_gz_facebook #Nom exact de la table dans BQ
         description: facebook  date_date _ campaign_key
@@ -78,12 +78,12 @@ sources:
             description: no need
           - name: click
             description: no need
-          # - name: "(date_date || '-' || campaign_key)"
-          #   description: primary key of the table
-          #   tests:
-          #     - unique
-
-#CRITEO
+          - name: "(date_date || '-' || campaign_key ||  '-' || camPGN_name)"
+            description: primary key of the table
+            tests:
+              - unique
+              - not_null
+#CRITEO 3
       - name: gz_criteo # allias de la table
         identifier: raw_gz_criteo #Nom exact de la table dans BQ
         description: criteo  date_date _ campaign_key
@@ -102,13 +102,13 @@ sources:
             description: no need
           - name: click
             description: no need
-          # - name: "(date_date || '-' || campaign_key)"
-          #   description: primary key of the table
-          #   tests:
-          #     - unique
-          #     - not_null
+          - name: "(date_date || '-' || campaign_key || '-' || camPGN_name)"
+            description: primary key of the table
+            tests:
+              - unique
+              - not_null
 
-#ADWORDS
+#ADWORDS 4
       - name: gz_adwords # allias de la table
         identifier: raw_gz_adwords #Nom exact de la table dans BQ
         description: adwords  date_date _ campaign_key
@@ -127,8 +127,8 @@ sources:
             description: no need
           - name: click
             description: no need
-          # - name: "(date_date || '-' || campaign_key)"
-          #   description: primary key of the table
-          #   tests:
-          #     - unique
-          #     - not_null
+          - name: "(date_date || '-' || campaign_key || '-' || camPGN_name)"
+            description: primary key of the table
+            tests:
+              - unique
+              - not_null
